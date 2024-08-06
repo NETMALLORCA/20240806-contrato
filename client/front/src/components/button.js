@@ -23,23 +23,10 @@ class Button extends HTMLElement {
     const button = this.shadow.querySelector('.send-button')
 
     button.addEventListener('click', async () => {
-      let response = await fetch(https://catalegdades.caib.cat/resource/anss-9wx4.json)
-      let data = await response.json()
+      let response = await fetch('https://catalegdades.caib.cat/resource/anss-9wx4.json')
+      const data = await response.json()
 
-      response = await fetch(data.datos)
-      data = await response.json()
-
-      data = data.map(element => {
-        const newElement = {}
-
-        Object.entries(element).forEach(([key, value]) => {
-          newElement[key] = value.replace(',', '.')
-        })
-
-        return newElement
-      })
-
-      response = await fetch(`${import.meta.env.VITE_API_URL}/api/front/contrato`, {
+      response = await fetch(`${import.meta.env.VITE_API_URL}/api/front/contratos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

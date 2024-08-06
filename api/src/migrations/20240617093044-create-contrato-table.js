@@ -10,47 +10,68 @@ module.exports = {
         autoIncrement: true,
         allowNull: false
       },
-      fecha: {
-        type: Sequelize.DATEONLY
-      },
-      indicativo: {
+      rgan_contractaci: {
         type: Sequelize.STRING
       },
-      nombre: {
+      data_darrer_anunci_plataforma: {
         type: Sequelize.STRING
       },
-      provincia: {
+      expedient: {
         type: Sequelize.STRING
       },
-      altitud: {
-        type: Sequelize.DECIMAL
+      t_tol: {
+        type: Sequelize.TEXT
       },
-      tmed: {
-        type: Sequelize.DECIMAL
-      },
-      prec: {
+      tipus_contracte: {
         type: Sequelize.STRING
       },
-      tmin: {
-        type: Sequelize.DECIMAL
+      procediment_contractaci: {
+        type: Sequelize.STRING
       },
-      tmax: {
-        type: Sequelize.DECIMAL
+      pressupost_expedient: {
+        type: Sequelize.STRING
       },
-      dir: {
-        type: Sequelize.DECIMAL
+      pressupost_expedient_sense: {
+        type: Sequelize.STRING
       },
-      velmedia: {
-        type: Sequelize.DECIMAL
+      modificacions_import: {
+        type: Sequelize.STRING
       },
-      racha: {
-        type: Sequelize.DECIMAL
+      modificacions_termini: {
+        type: Sequelize.STRING
       },
-      sol: {
-        type: Sequelize.DECIMAL
+      pr_rroga_d_un_altre_expedient: {
+        type: Sequelize.STRING
       },
-      presMax: {
-        type: Sequelize.DECIMAL
+      resultat_adjudicaci: {
+        type: Sequelize.STRING
+      },
+      data_acord_adjudicaci: {
+        type: Sequelize.STRING
+      },
+      data_formalitzaci: {
+        type: Sequelize.STRING
+      },
+      cif_adjudicatari: {
+        type: Sequelize.STRING
+      },
+      nom_adjudicatari: {
+        type: Sequelize.STRING
+      },
+      import_adjudicaci: {
+        type: Sequelize.STRING
+      },
+      import_adjudicaci_sense_iva: {
+        type: Sequelize.STRING
+      },
+      ofertes_rebudes: {
+        type: Sequelize.STRING
+      },
+      tipus_tramitaci_: {
+        type: Sequelize.STRING
+      },
+      financiaci_ue: {
+        type: Sequelize.STRING
       },
       createdAt: {
         type: Sequelize.DATE,
