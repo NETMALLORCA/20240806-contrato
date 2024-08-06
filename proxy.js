@@ -4,7 +4,7 @@ const app = express();
 
 const options = {
   target: 'http://127.0.0.1:8080', 
-  cookieDomainRewrite: 'dev-aemet.com', 
+  cookieDomainRewrite: 'dev-contrato.com', 
   changeOrigin: true,
   logLevel: 'debug',
   onProxyReq: function(proxyReq, req, res) {
